@@ -235,3 +235,36 @@
 
 
 // ======================================================= show must go on ========================================// 
+
+// const numbers = [2, 4, 6];
+
+// let pluss = numbers.map(num => num + 3)
+
+// console.log(numbers);
+
+
+// const numbers = [12, 5, 8, 130, 44]
+
+// let filtred = numbers.filter(num => num < 10)
+
+// console.log(filtred);
+
+
+// const numbers = [5, 10, 15, 20]
+
+// let filtMap = numbers.filter(num=> num > 10)
+
+// let Mapfil = filtMap.map(num => num * 2)
+
+// console.log(Mapfil);
+
+
+// const users = [
+//   { name: "Руслан", age: 26 },
+//   { name: "Али", age: 19 },
+//   { name: "Эмиль", age: 30 }
+// ];
+
+// let filtage = users.filter(user => user.age > 20)
+
+// console.log(filtage);
