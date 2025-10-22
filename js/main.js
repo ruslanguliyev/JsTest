@@ -96,7 +96,7 @@
 // function up() {
 //     console.log(num);
 //     var num = 5 
-    
+
 // }
 // up();
 
@@ -268,3 +268,58 @@
 // let filtage = users.filter(user => user.age > 20)
 
 // console.log(filtage);
+
+
+// const users = [
+//   { name: "Руслан", age: 26, active: true },
+//   { name: "Али", age: 19, active: false },
+//   { name: "Эмиль", age: 30, active: true },
+//   { name: "Фарид", age: 17, active: true }
+// ];
+
+
+// let activeFiltred = users.filter(activeUser => activeUser.age > 20 && activeUser.active == true).map(newUsers => newUsers.name)
+
+// console.log(activeFiltred);
+
+
+// function calculateInterest(balance, rate){
+//     return (balance * rate) / 100;
+// }
+
+// function addInterest(balance, rate){
+//     return balance + calculateInterest(balance, rate);
+// }
+
+// function displayBalance(name, balance) { 
+//     console.log(`На счету ${name}: ${balance}$`);
+// }
+
+// let balance = 950000000
+// let rate = 5
+
+// balance = addInterest(balance, rate)
+// displayBalance("Ruslan", balance)
+
+
+
+// function isUserValid(username, password) {
+//     return username === "admin" && password == "1234";
+// }
+
+
+// function login(username, password) {
+//   if (isUserValid(username, password)) {
+//     return `Добро пожаловать, ${username}!`;
+//   } else {
+//     return "Ошибка: неверное имя или пароль";
+//   }
+// }
+
+// function displayMessage(message) {
+//     console.log(message);
+// }
+
+// const message = login("admin", "1234")
+// displayMessage(message)
+
