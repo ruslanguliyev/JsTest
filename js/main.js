@@ -1,4 +1,6 @@
 
+"use strict";
+
 // let val = !(true && true) 
 // console.log(val);
 
@@ -322,4 +324,20 @@
 
 // const message = login("admin", "1234")
 // displayMessage(message)
+
+//===================================================Object=========================================// 
+
+// let person = {};
+// Object.defineProperty(person, "name", {
+//     configurable: false,
+//     writable: true, 
+//     value: "Nicholas"
+// });
+// Object.defineProperty(person, "name", {
+//     writable: false,
+// })
+
+
+// person.name = "Ruslan"
+// console.log(person.name);
 

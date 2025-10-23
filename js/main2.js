@@ -18,3 +18,14 @@
 // }
 // fnc();
 
+
+let person = {};
+Object.defineProperty(person, "name", {
+    configurable: true,
+    writable: true, 
+    value: "Nicholas"
+});
+
+
+person.name = "Ruslan"
+console.log(person.name);
