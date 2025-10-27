@@ -379,26 +379,49 @@
 // }
 
 
-const user = {
-    contacts: {
-        email: "ruslan@example.com",
-        phone: "+49 111 111 111"
-    },
+// const user = {
+//     contacts: {
+//         email: "ruslan@example.com",
+//         phone: "+49 111 111 111"
+//     },
 
-    get contactInfo() {
-        return `${this.contacts.email}, ${this.contacts.phone}`
-    },
-    set contactInfo(value) {
-        const [email, phone] = value.split(" | ");
-        this.contacts.email = email;
-        this.contacts.phone = phone;
-    },
+//     get contactInfo() {
+//         return `${this.contacts.email}, ${this.contacts.phone}`
+//     },
+//     set contactInfo(value) {
+//         const [email, phone] = value.split(" | ");
+//         this.contacts.email = email;
+//         this.contacts.phone = phone;
+//     },
 
-};
+// };
 
-user.contactInfo = "myau@gmail.com | +49 222 222 222";
+// user.contactInfo = "myau@gmail.com | +49 222 222 222";
 
-console.log(user.contacts.email);
-console.log(user.contacts.phone);
-console.log(user.contactInfo);
+// console.log(user.contacts.email);
+// console.log(user.contacts.phone);
+// console.log(user.contactInfo);
 
+
+
+// const user = {
+//     info: {
+//         email: "",
+//     },
+//     get userEmail() {
+//         return this.info.email
+//     },
+//     set userEmail(value) {
+//         if (value.includes("@")) {
+//            this.info.email = value;
+//         }
+//         else {
+//             console.log("Неверный формат email");
+//         }
+//     }
+
+
+// }
+
+// user.userEmail = "ruslan.xample.com";
+// console.log(user.userEmail); 
