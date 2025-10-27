@@ -341,3 +341,64 @@
 // person.name = "Ruslan"
 // console.log(person.name);
 
+
+
+// let user = {}
+
+// Object.defineProperty(user, "name", {
+//     configurable: true,
+//     writable: true,
+//     value: "Ruslan"
+// })
+// Object.defineProperty(user, "age", {
+
+//     configurable: false, 
+//     writable: true, 
+//     value: "26"
+// })
+// Object.defineProperty(user, "id", {
+//     configurable: false, 
+//     writable: false,
+//     value: "A123"
+// })
+
+
+//========================get===set===================
+
+// const user = {
+//     adress: {
+//         city: "Berlin",
+//         country: "Germany"
+//     },
+//     get location() {
+//         return this.city + " " + this.country
+//     },
+//     set location(value) {
+
+//     }
+// }
+
+
+const user = {
+    contacts: {
+        email: "ruslan@example.com",
+        phone: "+49 111 111 111"
+    },
+
+    get contactInfo() {
+        return `${this.contacts.email}, ${this.contacts.phone}`
+    },
+    set contactInfo(value) {
+        const [email, phone] = value.split(" | ");
+        this.contacts.email = email;
+        this.contacts.phone = phone;
+    },
+
+};
+
+user.contactInfo = "myau@gmail.com | +49 222 222 222";
+
+console.log(user.contacts.email);
+console.log(user.contacts.phone);
+console.log(user.contactInfo);
+
