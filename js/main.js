@@ -341,10 +341,6 @@
 // person.name = "Ruslan"
 // console.log(person.name);
 
-
-
-// let user = {}
-
 // Object.defineProperty(user, "name", {
 //     configurable: true,
 //     writable: true,
@@ -357,10 +353,31 @@
 //     value: "26"
 // })
 // Object.defineProperty(user, "id", {
-//     configurable: false, 
-//     writable: false,
-//     value: "A123"
+//     configurable: false,
+//     writable: true,
+//     value: "A13"
 // })
+
+// user.id = "440"
+// console.log(user.id);
+
+
+
+
+// const user = {};
+
+// Object.defineProperty(user, "name", {
+//     value: "Ruslan",
+//     configurable: false
+// });
+
+// delete user.name; // ❌ не сработает
+// console.log(user.name); // "Ruslan"
+
+// Object.defineProperty(user, "name", {
+//     writable: true
+// }); // ❌ Ошибка: нельзя переопределить свойство
+
 
 
 //========================get===set===================
@@ -425,3 +442,6 @@
 
 // user.userEmail = "ruslan.xample.com";
 // console.log(user.userEmail); 
+
+
+//==================================================
