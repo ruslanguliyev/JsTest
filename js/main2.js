@@ -28,4 +28,4 @@ Object.defineProperty(person, "name", {
 
 
 person.name = "Ruslan"
-console.log(person.name);
+console.log(person.name);   
