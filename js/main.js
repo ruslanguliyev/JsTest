@@ -464,4 +464,61 @@
 
 // Обратите также внимание на то, что имя функции Person начинается с прописной буквы. 
 // Имена конструкторов всегда начинаются с прописной буквы, а имена обычных функций — со строчной.
-// Конструкторы — это просто функции, которые создают объекты.
+// Конструкторы — это просто функции, которые создают объекты.  
+
+
+// class Hero {
+//     constructor(name, power, health) {
+//         this.name = name;
+//         this.power = power;
+//         this.health = health;
+//     }
+// }
+
+
+// Hero.prototype.attack = function (target) {
+//     target.health -= 10;
+//     console.log(`${this.name} atakuet ${target.name}. 
+//         zdorovye ${target.name} :${target.health}  `);
+// }
+
+
+// let hero1 = new Hero("Thor", "lightning", 100);
+// let hero2 = new Hero("SpiderMan", "Pautona naxuy", 100)
+
+// hero1.atack(hero2)
+
+
+
+// class Person {
+//     constructor(name, age){
+//         this.name = name; 
+//         this.age = age
+//     }
+// }
+
+// Person.prototype.sayMyName = function(){
+//     console.log(
+//         `Privet mena zovut ${this.name} i mne ${this.age}`
+//     );
+// }
+
+
+// let p1 = new Person ("Ruslan", 27)
+// let p2 = new Person ("Sophi", 27)
+
+// p1.sayMyName()
+
+
+
+
+//==============================================FUNCTIONS===================================================
+
+// Поскольку функции являются объектами, имена функций явля-
+// ются просто указателями на функциональные объекты и необязательно связаны
+// с самой функцией.
+
+//Функции стрелок не требуют скобок, если используется только один параметр.
+// Если параметры вообще не нужны или их больше одного, требуются круглые скобки.
+
+
