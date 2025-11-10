@@ -1,7 +1,7 @@
 
 "use strict";
 
-// let val = !(true && true) 
+// let val = !(true && true)
 // console.log(val);
 
 // val = 5 > 4 > 3 < 2;
@@ -32,13 +32,13 @@
 //=====================================//
 
 
-// console.log( 4+ "5" ); 
+// console.log( 4+ "5" );
 
 // bir operanda aid olan operatora Unary operator deyilir
 // iki operanda aid olan operatora Binary operator deyilir
 
 
-//Унарным называется оператор, который применяется к одному операнду. 
+//Унарным называется оператор, который применяется к одному операнду.
 //Бинарным называется оператор, который применяется к двум операндам.
 
 
@@ -50,7 +50,7 @@
 
 
 // let val  = ( 5 % 2 )&&( 8 % 3 );
-// let val1 = 2 && 5 
+// let val1 = 2 && 5
 // console.log(val1);
 
 
@@ -97,7 +97,7 @@
 
 // function up() {
 //     console.log(num);
-//     var num = 5 
+//     var num = 5
 
 // }
 // up();
@@ -174,10 +174,10 @@
 
 // console.log(obj);
 
-//Потому что они представляют собой массив, который также является типом объекта. 
+//Потому что они представляют собой массив, который также является типом объекта.
 //Таким образом, каждый из них содержит разные адреса памяти. Из-за чего они не одинаковы.
 
-//Это два разных экземпляра массива. Javascript сравнивает непримитивные значения, такие как массивы, объекты, функции и т. д., по ссылке, 
+//Это два разных экземпляра массива. Javascript сравнивает непримитивные значения, такие как массивы, объекты, функции и т. д., по ссылке,
 //поэтому, если они буквально не являются одним и тем же экземпляром в памяти, они не будут сопоставимы.
 
 
@@ -185,8 +185,8 @@
 // let num = 0 == 0;
 // console.log(num);
 
-// let a = { }; 
-// let b = a; 
+// let a = { };
+// let b = a;
 // console.log( a == b )
 
 
@@ -219,7 +219,7 @@
 
 
 
-// const soldier = { 
+// const soldier = {
 //     health: 400,
 //     armor: 100,
 //     power: "fly"
@@ -236,7 +236,7 @@
 // console.log(sayHello())
 
 
-// ======================================================= show must go on ========================================// 
+// ======================================================= show must go on ========================================//
 
 // const numbers = [2, 4, 6];
 
@@ -293,7 +293,7 @@
 //     return balance + calculateInterest(balance, rate);
 // }
 
-// function displayBalance(name, balance) { 
+// function displayBalance(name, balance) {
 //     console.log(`На счету ${name}: ${balance}$`);
 // }
 
@@ -325,12 +325,12 @@
 // const message = login("admin", "1234")
 // displayMessage(message)
 
-//===================================================Object=========================================// 
+//===================================================Object=========================================//
 
 // let person = {};
 // Object.defineProperty(person, "name", {
 //     configurable: false,
-//     writable: true, 
+//     writable: true,
 //     value: "Nicholas"
 // });
 // Object.defineProperty(person, "name", {
@@ -348,8 +348,8 @@
 // })
 // Object.defineProperty(user, "age", {
 
-//     configurable: false, 
-//     writable: true, 
+//     configurable: false,
+//     writable: true,
 //     value: "26"
 // })
 // Object.defineProperty(user, "id", {
@@ -441,7 +441,7 @@
 // }
 
 // user.userEmail = "ruslan.xample.com";
-// console.log(user.userEmail); 
+// console.log(user.userEmail);
 
 
 //==================================================
@@ -462,9 +462,9 @@
 // console.log(person1);
 
 
-// Обратите также внимание на то, что имя функции Person начинается с прописной буквы. 
+// Обратите также внимание на то, что имя функции Person начинается с прописной буквы.
 // Имена конструкторов всегда начинаются с прописной буквы, а имена обычных функций — со строчной.
-// Конструкторы — это просто функции, которые создают объекты.  
+// Конструкторы — это просто функции, которые создают объекты.
 
 
 // class Hero {
@@ -478,7 +478,7 @@
 
 // Hero.prototype.attack = function (target) {
 //     target.health -= 10;
-//     console.log(`${this.name} atakuet ${target.name}. 
+//     console.log(`${this.name} atakuet ${target.name}.
 //         zdorovye ${target.name} :${target.health}  `);
 // }
 
@@ -492,7 +492,7 @@
 
 // class Person {
 //     constructor(name, age){
-//         this.name = name; 
+//         this.name = name;
 //         this.age = age
 //     }
 // }
@@ -509,6 +509,110 @@
 
 // p1.sayMyName()
 
+//=============================================================Unasledovanie/ Polimorfizm
+
+// class Hero {
+//     constructor(name, health) {
+//         this.name = name
+//         this.health = health
+//     }
+//     takeDamage(damage) {
+//         this.health -= damage;
+//         console.log(`${this.name} получает ${damage} урона. Осталось ${this.health} здоровья.`);
+//     }
+//     isAlive() {
+//         return this.health > 0;
+//     }
+// }
+
+
+// class Warrior extends Hero {
+//     attack(target) {
+//         const damage = 15;
+//         console.log(`${this.name} rubit mechom`);
+//         target.takeDamage(damage)
+//     }
+// }
+// class Mage extends Hero {
+//     attack(target) {
+//         const damage = 20;
+//         console.log(`${this.name} shviraet faerome`);
+//         target.takeDamage(damage)
+//     }
+// }
+// class Archer extends Hero {
+//     attack(target) {
+//         const damage = 10;
+//         console.log(`${this.name} стреляет из лука 🏹`);
+//         target.takeDamage(damage);
+//     }
+// }
+
+// function battle(hero1, hero2) {
+//     console.log(`⚔️ Бой между ${hero1.name} и ${hero2.name} начинается!\n`);
+
+//     while (hero1.isAlive() && hero2.isAlive()) {
+//         hero1.attack(hero2);
+//         if (!hero2.isAlive()) break;
+
+//         hero2.attack(hero1);
+//     }
+
+//     const winner = hero1.isAlive() ? hero1.name : hero2.name;
+//     console.log(`🏆 Побеждает ${winner}!`);
+// }
+
+// const thor = new Warrior("Тор", 100);
+// const merlin = new Mage("Мерлин", 80);
+
+// battle(thor, merlin);
+
+// class Transport {
+//     constructor(sound, model) {
+//         this.model = model;
+//         this.sound = sound;
+//     }
+
+//     makeSound() {
+
+//         console.log(`Какой-то транспорт молчит...${this.model}`);
+
+//     }
+// }
+
+// class Car extends Transport {
+//     makeSound() {
+//         console.log(`${this.sound}!! Еду на тачке ${this.model}`);
+//     }
+// }
+
+// class Motorcycle extends Transport {
+//     makeSound() {
+//         console.log(` ${this.sound}!! Газую на байке ${this.model}`);
+
+//     }
+// }
+
+// class Bicycle extends Transport {
+//     makeSound() {
+//         console.log(`${this.sound}! Кручу педали на велике ${this.model}`);
+
+//     }
+// }
+
+
+
+
+// const garage = [
+//     new Car("БИП-БИП", 'Лада Калина'),
+//     new Motorcycle("ВРУУУМ-ВРУУМ", 'Yamaha R1'),
+//     new Bicycle("Дзынь-дзынь", 'Stels Navigator'),
+//     new Transport('Таинственная штука на колёсах')
+// ];
+
+
+
+// garage.forEach(vehicle => vehicle.makeSound());
 
 
 
@@ -520,5 +624,6 @@
 
 //Функции стрелок не требуют скобок, если используется только один параметр.
 // Если параметры вообще не нужны или их больше одного, требуются круглые скобки.
+
 
 
