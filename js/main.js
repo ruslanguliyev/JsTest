@@ -616,6 +616,51 @@
 
 
 
+
+
+// class Notification {
+//     constructor(message) {
+//         this.message = message
+//     }
+
+
+//     display() {
+//         console.log(`[Poprobuyate snova] ${this.message}`);
+//     }
+// }
+
+// class SuccessNotification extends Notification {
+//     display() {
+//         console.log(`[Uspeshnaya Operacia] ${this.message}`);
+
+//     }
+// }
+
+// class ErrorNotification extends Notification {
+//     display() {
+//         console.log(`[Oshibka idi naxuy] ${this.message}`);
+
+//     }
+// }
+
+// class WarningNotification extends Notification {
+//     display() {
+//         console.log(`[Preduprejdenie, a to poydesh naxuy] ${this.message}`);
+
+//     }
+// }
+
+
+
+// const Notifications = [
+//     new SuccessNotification('Пользователь создан'),
+//     new ErrorNotification('Не удалось подключиться к серверу'),
+//     new WarningNotification('Пароль истекает через 3 дня'),
+//     new Notification('Что-то произошло...')
+// ]
+
+// Notifications.forEach(n=>n.display())
+
 //==============================================FUNCTIONS===================================================
 
 // Поскольку функции являются объектами, имена функций явля-
@@ -624,6 +669,66 @@
 
 //Функции стрелок не требуют скобок, если используется только один параметр.
 // Если параметры вообще не нужны или их больше одного, требуются круглые скобки.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
