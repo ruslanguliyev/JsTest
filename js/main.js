@@ -661,7 +661,62 @@
 
 // Notifications.forEach(n=>n.display())
 
-//==============================================FUNCTIONS===================================================
+
+
+// class ATM {
+//     #balance = 0;
+//     #pin = 9999;
+//     constructor(pin, balance) {
+//         this.#pin = pin
+//         this.#balance = balance
+//     }
+
+//     checkPin(enteredPin) {
+//         return enteredPin === this.#pin
+
+//     }
+
+
+//     deposit(amount, pin) {
+//         if (pin === this.#pin && amount > 0) {
+//             this.#balance += amount;
+//         }
+//     }
+
+//     withdraw(amount, pin) {
+//         if (pin !== this.#pin) {
+//             throw new Error("Неправильный PIN");
+//         }
+//         if (amount <= 0) {
+//             throw new Error("Сумма должна быть > 0");
+//         }
+//         if (amount > this.#balance) {
+//             throw new Error("Недостаточно средств");
+//         }
+//         this.#balance -= amount;
+//     }
+
+//     getBalance(pin) {
+//         if (pin === this.#pin) {
+//             return this.#balance
+//         } else {
+//             throw new Error("nepravilniy pin");
+//         }
+//     }
+
+// }
+
+// const atm = new ATM(9999, 10000000)
+// atm.deposit(500, 9999)
+// atm.withdraw(5555, 9999)
+// console.log(atm.getBalance(9999));
+
+
+
+
+
+
+//==============================================FUNCTIONS========================================
 
 // Поскольку функции являются объектами, имена функций явля-
 // ются просто указателями на функциональные объекты и необязательно связаны
@@ -669,11 +724,6 @@
 
 //Функции стрелок не требуют скобок, если используется только один параметр.
 // Если параметры вообще не нужны или их больше одного, требуются круглые скобки.
-
-
-
-
-
 
 
 
